@@ -1,120 +1,116 @@
 # 📦 A Data-Driven Model for Predicting Delivery Delays in Supply Chains
 **Author:** Priyanka Burra  
 **Course:** M.Sc. Bioinformatics  
-**Type:** Final Year Research Project  
+**Project Type:** Final Year Research Project  
 
 ---
 
-### 🔍 Project Description
-A data-driven machine learning project designed to analyze and predict **delivery delays** in supply chain operations using **data analytics** and **predictive modeling techniques**.  
-This project identifies patterns in real-world logistics data and provides insights to help organizations improve efficiency, reliability, and customer satisfaction.
-
----
-
-## 🧠 Project Overview
-In modern supply chains, timely delivery is crucial for customer retention and operational success.  
-This project leverages **data science and machine learning** to predict whether a product shipment will be delayed based on various logistical, product, and customer features.  
-By performing detailed **Exploratory Data Analysis (EDA)** and developing predictive models, this study aims to identify critical factors contributing to delivery delays and propose data-driven optimization strategies.
+## 🧠 Overview
+This project presents a **data-driven machine learning framework** for analyzing and predicting **delivery delays** in supply chain operations.  
+By leveraging data analytics and predictive modeling, the study identifies key operational and logistical factors that influence shipment delays, enabling organizations to improve efficiency, optimize processes, and enhance customer satisfaction.
 
 ---
 
 ## 🎯 Objectives
-- Perform **Exploratory Data Analysis (EDA)** on supply chain datasets.  
-- Identify **key factors** influencing delivery delays.  
-- Build and evaluate **machine learning models** for delay prediction.  
-- Generate **actionable insights** to improve logistics performance.
+- Perform **Exploratory Data Analysis (EDA)** to uncover patterns in supply chain data.  
+- Identify **key determinants** of delivery delays.  
+- Build and evaluate **supervised machine learning models** for delay prediction.  
+- Provide **data-driven insights** to optimize logistics and decision-making.  
 
 ---
 
-## 🧩 Dataset
+## 📊 Dataset Information
 - **Dataset Name:** DataCo Supply Chain Dataset  
-- **Source:** Publicly available dataset containing order, shipping, and customer details.  
-- **File Path:** `data/raw/DataCoSupplyChain.csv`  
+- **Source:** Publicly available dataset containing order, shipment, and customer details.  
+- **Path:** `data/raw/DataCoSupplyChain.csv`  
 
-**Key Features:**
+**Key Features Analyzed:**
 - Shipping Mode  
 - Order Processing Time  
 - Delivery Status  
 - Customer Segment  
 - Product Category  
-- Profit, Cost, and Discounts  
-> ⚠️ Note: The dataset is used for research and academic purposes only.
+- Profit, Cost, and Discount Metrics  
+> ⚠️ *Note:* Dataset used strictly for research and academic purposes.
 
 ---
 
-## 🧮 Methodology
-### 🔹 1. Data Cleaning & Preprocessing
-- Handling missing values and outliers  
-- Encoding categorical variables  
-- Normalizing and transforming data  
+## ⚙️ Methodology
+### 1️⃣ Data Preprocessing
+- Handled missing values and outliers.  
+- Encoded categorical features using OneHotEncoder.  
+- Normalized and transformed numeric variables for better model performance.
 
-### 🔹 2. Exploratory Data Analysis (EDA)
-- Visualizing trends and delay distributions  
-- Correlation analysis of numerical features  
-- Identifying relationships between shipping mode, distance, and delay  
+### 2️⃣ Exploratory Data Analysis (EDA)
+- Visualized delay patterns and distributions.  
+- Performed correlation and feature importance analysis.  
+- Identified dependencies between shipping mode, product type, and delivery time.
 
-### 🔹 3. Model Development
-Implemented supervised learning algorithms:
-- Logistic Regression  
-- Decision Tree Classifier  
-- Random Forest Classifier  
+### 3️⃣ Model Development
+Implemented and compared multiple supervised learning models:
+- **Logistic Regression**  
+- **Decision Tree Classifier**  
+- **Random Forest Classifier**
 
-### 🔹 4. Model Evaluation
-Metrics used:
+### 4️⃣ Model Evaluation
+Evaluated models using:
 - Accuracy  
 - Precision  
 - Recall  
 - F1-Score  
-- ROC-AUC Curve  
+- ROC–AUC Curve  
 
-### 🔹 5. Deployment *(Optional)*
-A **Streamlit-based web application** was created for interactive prediction of delivery delays using trained machine learning models.
-
----
-
-## 📊 Results & Discussion
-- The **Random Forest Classifier** achieved the **highest accuracy** in predicting delayed deliveries.  
-- **Shipping mode**, **order handling time**, and **warehouse distance** were identified as the most significant factors.  
-- Visual analytics helped pinpoint bottlenecks in order fulfillment and transportation processes.  
-- The study demonstrates the potential of machine learning in **proactive supply chain management**.
+### 5️⃣ Deployment (Optional)
+A **Streamlit-based web application** was designed to provide interactive predictions on parcel delivery delays.
 
 ---
 
-## 🖥️ How to Run the Project
-1. **Clone this repository**
-   ```bash
-   git clone https://github.com/burrapriyanka85-pixel/A-Data-Driven-Model-for-Predicting-Delivery-Delays-in-Supply-Chains.git
+## 🧮 Results & Discussion
+- The **Random Forest Classifier** achieved the best overall accuracy for delay prediction.  
+- **Shipping mode**, **handling time**, and **warehouse distance** were identified as dominant features.  
+- The study highlights how **machine learning can proactively improve supply chain reliability**.
 
-2. Navigate to the project directory
+---
+
+## 💻 Project Setup & Execution
+### Step 1: Clone the Repository
+```bash
+git clone https://github.com/burrapriyanka85-pixel/A-Data-Driven-Model-for-Predicting-Delivery-Delays-in-Supply-Chains.git
 cd A-Data-Driven-Model-for-Predicting-Delivery-Delays-in-Supply-Chains
 
-3. Install dependencies
+Step 2: Install Required Dependencies
 pip install -r requirements.txt
 
-4. Launch Jupyter Notebook
+Step 3: Launch Jupyter Notebook
 jupyter notebook
 
-5. Run the analysis
-Open and execute the file:
+Step 4: Run the Analysis
+Open and execute:
 notebook/supply_chain_delay_analysis.ipynb
 
-📈 Tools & Technologies
-Category	Tools / Libraries Used
+🚀 Streamlit App (Optional Demo)
+To interact with the trained model through a web interface:
+pip install -r requirements.txt
+streamlit run app.py
+Once started, open the displayed URL (typically http://localhost:8501) in your browser.
+
+🧰 Tools & Technologies
+Category	Tools / Libraries
 Programming Language	Python
 Libraries	Pandas, NumPy, Matplotlib, Seaborn, Scikit-learn
-Environment	Jupyter Notebook
-Visualization	Matplotlib, Seaborn
+IDE / Environment	Jupyter Notebook
 Deployment (Optional)	Streamlit
+Version Control	Git, GitHub
 
-🧩 Future Scope
-Implement deep learning models for higher predictive accuracy.
-Integrate real-time data streams from IoT-enabled logistics systems.
-Develop a business intelligence dashboard for continuous monitoring and analytics.
+🔮 Future Scope
+Integrate deep learning models for enhanced predictive accuracy.
+Include real-time IoT logistics data for continuous monitoring.
+Build an interactive dashboard for supply chain performance tracking.
 
 🙏 Acknowledgment
-This project was developed as part of the M.Sc. Bioinformatics final year curriculum under faculty supervision.
-The dataset and reference materials were utilized solely for academic and research purposes.
+This research project was conducted as part of the M.Sc. Bioinformatics curriculum under faculty supervision.
+All datasets and reference materials were utilized exclusively for educational and research purposes.
 
 📜 License
-This project is released under the MIT License.
-You are free to use, modify, and distribute it with proper attribution to the author.
+This project is distributed under the MIT License.
+You are free to use, modify, and distribute this work with appropriate attribution to the author.
